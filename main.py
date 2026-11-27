@@ -5,7 +5,7 @@ from output_module import print_result
 
 def main():
     print("=== Система работы с комплексными числами ===")
-    
+
     z1 = input_complex_number("Введите первое число:")
     z2 = input_complex_number("Введите второе число:")
     op = input_operation()

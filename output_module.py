@@ -2,8 +2,9 @@ import math
 
 
 def format_algebraic(z: complex) -> str:
+    real = 0.0 if z.real == 0 else z.real
     sign = "+" if z.imag >= 0 else "-"
-    return f"{z.real:.2f} {sign} {abs(z.imag):.2f}i"
+    return f"{real:.2f} {sign} {abs(z.imag):.2f}i"
 
 
 def format_trigonometric(z: complex) -> str:
